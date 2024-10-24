@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: wheat;
+}
+
+img {
+    width: 15px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Poppins, sans-serif';
+    font-weight: 800;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    text-shadow: 1px 1px 10px maroon;
+    margin: 2vh 0 2vh;
+    padding: 2vh 0 2vh;
+}
+
+header {background-image: linear-gradient(to left, rgb(71, 55, 55), rgb(163, 127, 127), rgb(71, 55, 55));}
+
+main {
+    width: 100%;
+    font-size: smaller;
+    background-color: wheat;
+}
+
+.menu {list-style: none; float: left;}
+
+.menu li {
+    height: 27px;
+    background-image: linear-gradient(to top right, grey, rgb(105, 82, 82), rgb(102, 52, 52), maroon);
+    position: relative;
+    float: left;
+    border-right: 1px solid maroon;
+    padding-top: 2px;
+    width: 339px;
+}
+
+.menu li a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: 0.2s linear;
+}
+
+.menu li a:hover {
+    color: whitesmoke;
+    box-shadow: 0px 1px 2px 0px maroon, 0px 1px 2px 0px maroon;
+    filter: drop-shadow(0px 1px 10px maroon);
+}
+
+.menu li ul {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+
+.menu li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+}
+
+.menu li ul li {
+    height: 28px;
+    background-image: linear-gradient(to top right, grey, rgb(105, 82, 82), rgb(102, 52, 52), maroon);
+    border: 1px solid whitesmoke;
+    display: block;
+    width: 100%;
+}
+
+footer {
+    padding: 1vh 0 1vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96, #0088ff, #225f96);
+}
+
+footer a {
+    color: rgb(131, 224, 225);
+    text-decoration: none;
+    font-weight: bolder;
+}
