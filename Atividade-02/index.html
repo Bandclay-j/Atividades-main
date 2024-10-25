@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Advogados de Primeira</title>
+    <link rel="shortcut icon" href="../Img/Attorney_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Formulário de Aplicação</h1>
+        <a href="#" title="AdvogadosdePrimeira.com.br">
+            <img src="../Img/Attorney.png" alt="">
+        </a>
+        <p>Preencha os dados abaixo:</p>
+    </div>
+
+    <main>
+        <form>
+            <fieldset>
+                <div>
+                    <label for="Nome">Nome Completo: </label>
+                    <input type="text" id="nome" name="Nome" required placeholder="Seu nome completo">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="E-mail">E-mail: </label>
+                    <input type="email" id="email" name="E-mail" required placeholder="Exemplo@e-mail.com">
+                </div>
+                <div>
+                    <label for="Telefone">Telefone: </label>
+                    <input type="tel" id="telefone" name="Telefone" maxlength="15" required placeholder="(xx) xxxxx-xxxx">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <div>
+                        <label for="Nascimento">Data de Nascimento: </label>
+                        <input type="date" id="nascimento" name="Nascimento" required>
+                    </div>
+                    <label for="Cidade">Informe sua Cidade: </label><br>
+                    <select name="Cidade" id="cidade" required>
+                        <option value="I">Brasília</option>
+                        <option value="II">Gama</option>
+                        <option value="III">Taguatinga</option>
+                        <option value="IV">Brazlândia</option>
+                        <option value="V">Sobradinho</option>
+                        <option value="VI">Planaltina</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="Cargo">Cargo de Interesse</label><br>
+
+                    <input type="radio" id="cargo_1" name="Cargo" value="Promotor"><strong>Promotor</strong><br>
+
+                    <input type="radio" id="cargo_2" name="Cargo" value="Defensor"><strong>Defensor</strong><br>
+
+                    <input type="radio" id="cargo_3" name="Cargo" value="Procurador"><strong>Procurador</strong><br>
+
+                    <input type="radio" id="cargo_4" name="Cargo" value="Juiz"><strong>Juiz</strong>
+                </div>
+            </fieldset>
+            <h2>Resposta</h2>
+            <fieldset>
+                <div>
+                    <label for="PDF">Currículo (PDF)</label>
+                    <input type="file" id="PDF" name="PDF">
+                </div>
+                <div>
+                    <label for="Perguntas">Perguntas: </label>
+                    <textarea name="Perguntas" id="Perguntas" maxlength="2000" cols="60"
+                    rows="7" placeholder="Dê alguma sugestão;"></textarea>
+                </div>
+                <div>
+                    <label for="Submit">Eu aceito os termos de Serviço</label>
+                    <input type="checkbox" id="submit" name="Submit" required>
+                </div>
+
+                
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+            </fieldset>
+
+           
+        </form>
+    </main>
+
+    <footer>
+        Formulário de Aplicação - <a href="#">Advogados de Primeira</a>
+        &copy; 2024 - <a href="https://github.com/Talisson-Rodrigues" target="_blank">Talisson Pontes</a>
+    </footer>
+</body>
+</html>

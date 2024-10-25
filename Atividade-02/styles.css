@@ -1,0 +1,173 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do Body */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    display: flex;
+    background-image: url(../Img/Tribunal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilo das Imagens */
+img {
+    height: 80px;
+    width: 160px;
+    margin-bottom: 3%;
+    margin-left: 30%;
+}
+
+/* Estilo do texto forte */
+strong {text-shadow: 2px 1px 3px black;}
+
+/* Estilo dos cabeçalhos e parágrafos */
+h2, h1, p {
+    color: tan;
+    text-shadow: 1px 1px black;
+}
+
+h1 {margin: 2%  0 2% 0;}
+
+h2 {margin: 2%;}
+
+/* Estilo do formulário */
+form {
+    width: 100%;
+    color: rgb(224, 25, 25);
+}
+
+/* Estilo do fieldset */
+fieldset {
+    backdrop-filter: blur(30px);
+    padding: 5%;
+    border-radius: 12px;
+    margin-bottom: 3%;
+    border: 3px solid burlywood;
+}
+
+/* Estilo da textarea */
+textarea {
+    margin-top: 2%;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: burlywood;
+}
+
+input, label, button {font-weight: bolder;}
+
+label, button {text-shadow: 1px 0px rgb(41, 41, 41);}
+
+input, button, select {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+input {
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid;
+    outline-color: #f5f5f5;
+    background-color: rgb(224, 25, 25);
+}
+
+input[type="checkbox"] {
+    width: 5%;
+    outline: none;
+}
+
+input[type="radio"] {
+    width: 7%;
+    margin-top: 5%;
+    outline: none;
+}
+
+input[type="date"] {
+    width: 25%;
+    padding: 6px;
+    transition: 0.2s;
+}
+
+input[type=file] {
+    border: 1px;
+    border-radius: 30px;
+    padding: 13px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+label {text-shadow: 1px 1px 3px black;}
+
+label[for="Submit"] {font-size: 13px;}
+
+button {
+    width: 50%;
+    margin-left: 120px;
+    padding: 1%;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(225, 237, 213);
+    color: whitesmoke;
+    border: 1px solid burlywood;
+}
+
+button[type="reset"] {
+    font-size: 12px;
+    height: 23px;
+    width: 28%;
+    margin-left: 130px;
+    margin-top: -1%;
+}
+
+select {
+    width: 50%;
+    margin-bottom: 5%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: rgb(255, 237, 213);
+    outline: 2px solid burlywood;
+    color: whitesmoke;
+}
+
+footer {
+    padding: 1vh 0 1vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96, #0088ff, #225f96);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(131, 224, 255);
+}
