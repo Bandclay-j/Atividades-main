@@ -69,3 +69,65 @@ li::before {
     float: right;
     width: 45%;
 }
+
+.fun h3 {
+    color:rgb(34, 34, 34);
+    text-shadow: 2px 0px 1em grey;
+}
+
+.jogos {
+    list-style-type: decimal;
+    cursor: pointer;
+}
+
+.jogos ::marker {
+    transition: 0.4s;
+}
+
+.jogos:hover ::marker {
+    font-size: 25px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px lightblue;
+}
+
+.filmes {
+    list-style-type: upper-latin;
+}
+
+.filmes ::marker {
+    animation: colorful 7s linear 2s infinite;
+    text-shadow: 1px 1px black;
+    font-size: larger;
+}
+
+@keyframes colorful {
+    2% {color: red}
+    5% {color: orange}
+    10% {color: yellow}
+    20% {color: greenyellow}
+    35% {color: green}
+    50% {color: cyan}
+    65% {color: blue}
+    80% {color: deeppink}
+    100% {color: black}
+}
+
+
+footer {
+    padding: 1vh 0 1vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96, #0088ff, #225f96);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(131, 224, 225);
+}
